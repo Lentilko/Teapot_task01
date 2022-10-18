@@ -1,0 +1,10 @@
+#necessary to add
+RewriteEngine On
+
+#Show just ID of category
+RewriteRule ^([^/.]+)?$ /HideURLCategory_Teapot/Categories.php?category_ID=$1 [L]
+
+#Hide php of category in products
+RewriteRule ^ProductID/([^/.]+)/([^/.]+)?$ /HideURLCategory_Teapot/Categories.php?category_ID=$1&prodct_ID=$2 [L]
+
+
